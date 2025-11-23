@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "info"> Hello World</h1>
+    <p class = demo> Heyyyyyy</p>
+    <p class = demo> hiiiiiii</p>
+
+    <script>
+      const a =   document.getElementById("info")
+      a.innerText = "hello kathmandu"
+      a.style.color = "pink"
+      a.remove()
+
+      const b = document.getElementsByClassName("demo")
+      b[0].innerText = "hello"
+      b[0].style.color = "red"
+
+      b[1].innerText ="how are you"
+      b[1].style.color = "blue"
+
+      document.querySelector("#info") //returns elements from id info
+      document.querySelector(".demo") //returns first element with class dem0
+      document.querySelectorAll(".demo") // returns all elements with class demo ( returns arrays)
+      document.querySelector("p") //returns first elements with tag p
+      document.querySelectorAll("p") // returns all elememts with tag p
+
+
+    </script>
+</body>
+</html>

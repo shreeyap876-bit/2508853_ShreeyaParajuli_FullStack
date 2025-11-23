@@ -1,0 +1,30 @@
+#yes{
+            margin-top: 10px;
+            background-color: green;
+            padding: 50px;
+            width:300px;
+}
+
+#yay,#nay,#hey{
+            display: inline-block;
+            border-radius: 2px;
+            background-color:red;
+            margin-left: 10px;
+            padding: 20px;
+}
+
+@media (max-width:900px){
+    
+
+}
+
+@media (max-width:900px){
+
+#yes{
+    display: flex;
+            border-radius: 2px;
+            background-color:red;
+            margin-left: 10px;
+            padding: 20px;
+}
+}

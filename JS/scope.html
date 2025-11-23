@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet() {
+            
+            var a = 2; //varible declared within the function cannot be used ourside of it and is noly accesible within it
+            if (true){
+                let b =3;    //variable declared within the block should be only used inside it
+                const c =3  
+                var d = 5;
+                 console.log(a)  
+            }
+
+            //console.log(b)
+            //console.lob(c)
+            // console.log(a)
+            console.log(d)
+        }
+    
+        greet()
+
+
+
+
+    </script>
+</body>
+</html>

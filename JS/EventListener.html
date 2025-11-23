@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "btn"> click </button>
+    <h1 id = "info"> Hover me</h1>
+    
+    <input id = "name" type="message" placeholder="type something">
+    <p id = "display"> </p>
+    <script>
+
+        const button = document.getElementById("btn")
+        button.addEventListener("click", function() {
+            document.getElementById("para").innerText = "This button was clicked"
+
+        });
+
+        const Hover = document.getElementById("info")
+        Hover.addEventListener("mouseover", function(){
+            Hover.style.color = "Green"
+        });
+/*
+        document.getElementById("info").addEventListener("mouseout", function(){
+
+            document.getElementById("info").style.color = "black"
+        })
+*/
+        const HoverOut = document.getElementById("info")
+        HoverOut.addEventListener("mouseout", function(){
+            HoverOut.style.color = "Black"
+        });
+
+
+        const input = document.getElementById("name")
+        input.addEventListener("input", function(){
+            document.getElementById("display").innerText = input.value;
+        });
+        
+
+
+
+
+    </script>
+</body>
+</html>
