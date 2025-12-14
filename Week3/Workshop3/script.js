@@ -68,7 +68,7 @@ form.addEventListener("submit", function (event) {
     })
     .catch((error) => console.error("Error adding movie:", error));
 });
-
+                    
 // Function to collect new data
 function editMoviePrompt(id, currentTitle, currentYear, currentGenre) {
   const newTitle = prompt("Enter new Title:", currentTitle);

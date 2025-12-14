@@ -20,7 +20,7 @@ const form = document.getElementById('contact_form');
             else if (input[1].value === "") {
                 message[1].innerText = "Email cannot be empty";
                 message[1].style.color = "red";
-            }
+            }s
             else if (input[2].value === "") {
                 message[2].innerText = "Message cannot be empty";
                 message[2].style.color = "red";
