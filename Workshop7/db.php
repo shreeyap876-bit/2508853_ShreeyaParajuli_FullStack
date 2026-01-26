@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$dbname = "herald_db";
-$user = "root";
-$pass = "";
+$dbname = "np03cs4a240099";
+$user = "np03cs4a240099";
+$pass = "65oAQTp6Jl";
 
 try {
     $pdo = new PDO(

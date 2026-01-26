@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreeya Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+       <div class="navSection">
+        <button id="navCrossButton" onclick="toggleNavBar()">✕</button>
+        <nav class="navDiv">
+            <ul>
+                <li><a href="#about" onclick="toggleNavBar()">Home</a></li>
+                <li><a href="#projects" onclick="toggleNavBar()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleNavBar()">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <video autoplay loop muted id="videobg">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+
+    <header class="site-header">
+        <h1>Shreeya Parajuli</h1>
+        <p>Computer Science Student</p>
+    </header>
+
+
+    <nav class="navbar">
+        <button id="navButton" onclick="toggleNavBar()">☰</button>
+        <div class = "buttons">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    </nav>
+
+     <section id="about" class="section-box">
+        <h2>About Me</h2>
+
+        <img src="fairy vibes.jpg" class="profile-img" alt="Profile Photo">
+
+        <p>
+            My name is Shreeya Parajuli, currently studying BSc (Hons) Computer Science at Herald College Kathmandu.
+            I am an enthusiastic and curious learner who enjoys exploring new ideas, improving my skills, and discovering new opportunities.
+        </p>
+    </section>
+
+    <section id="projects" class="section-box">
+        <h2>My Projects</h2>
+        <p>Here are some of my first projects:</p>
+
+        <div class="project-card">
+            <img src="project.png" alt="Project Screenshot">
+            <h3>HTML Beginner Page</h3>
+            <p>
+                This is my very first HTML and CSS portfolio project. I learned how to structure webpages using semantic elements, 
+                design with CSS, and build clean, aesthetic layouts. This helped me build confidence in frontend development.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="section-box">
+        <h2>Contact Me</h2>
+
+        <form id="contact_form" class="pink-form">
+
+            <label>Your Name</label>
+            <input type="text" class="input" placeholder="Enter your name">
+            <p class="message"></p>
+
+            <label>Your Email</label>
+            <input type="email" class="input" placeholder="Enter your email">
+            <p class="message"></p>
+
+            <label>Your Message</label>
+            <textarea class="input" placeholder="Write something..."></textarea>
+            <p class="message"></p>
+
+            <button type="submit" class="pink-btn">Send Message</button>
+            <p id="msg_sent"></p>
+
+        </form>
+    </section>
+
+    <footer class="simple-footer">
+        © 2025 Shreeya Parajuli — All Rights Reserved.
+    </footer>
+
+    <script src = "Portfolio2.js">
+    </script>
+
+</body>
+</html>
